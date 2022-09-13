@@ -21,5 +21,5 @@ find the greatest common divisor of two numbers
 The first algoritm to implement is the Euclidian algorithm. Assert that the arguments are numeric scalars or integers.
 }
 \references{
-https://en.wikipedia.org/wiki/Euclidean algorithm
+https://en.wikipedia.org/wiki/Euclidean_algorithm
 }
