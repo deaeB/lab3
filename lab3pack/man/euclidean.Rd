@@ -2,6 +2,7 @@
 \alias{euclidean}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
+euclidean
 %%  ~~function to do ... ~~
 }
 \description{
