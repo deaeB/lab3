@@ -7,7 +7,7 @@
 #' @param a A number.
 #' @param b A number.
 #' @return the greatest common divisor of a and b.
-#' @references https://en.wikipedia.org/wiki/Euclidean algorithm
+#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
 
 euclidean <-
 function(a, b){
