@@ -1,11 +1,11 @@
 Package: lab3pack
 Type: Package
-Title: What the package does (short line)
+Title: Euclidian algorithm and Dijkstra’s shortest path algorithm
 Version: 1.0
 Date: 2022-09-13
-Author: Who wrote it
-Maintainer: Who to complain to <donni508@student.liu.se>
-Description: More about what it does (maybe more than one line)
+Author: NI, Dongwei
+Maintainer:  <donni508@student.liu.se>
+Description: In this R package we will implement two famous algorithms, the Euclidian algorithm to find the greates common divisor of two integers and Dijkstra’s shortest path algorithm in a graph. 
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.1

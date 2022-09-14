@@ -1,14 +1,25 @@
+#' Dijkstras algorithm
+#' 
+#' find the the shortest path
+#' 
+#' The algorithm takes a graph and an initial node and calculates the shortest path from the initial node to every other node in the graph.
+#' 
+#' @param a a data.frame with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w)
+#' @param b  a numeric scalar that exist in the graph
+#' @return the shortest path to every other node from the starting node as a vector.
+#' @references https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+#' 
 dijkstra <-
 function(graph, init_node){
+  assert_args <- is.data.frame(graph) && all(names(graph) == c("v1", "v2", "w")) && any(init_node == graph[1]) && is.numeric(init_node) && length(init_node) == 1
+  stopifnot(assert_args)
+  # Assert arguments
   node_count <- nlevels(factor(graph[, 1])) 
   #number of all nodes
   list_spath <- array(rep(Inf, node_count)) 
   #initialize an array, stores the shortet weight to each node that you will return
   visited <- array(rep(0), node_count)
   #initialize an array, stores visited nodes
-  assert_args <- is.data.frame(graph) && all(names(graph) == c("v1", "v2", "w")) && any(init_node == graph[1]) && is.numeric(init_node) && length(init_node) == 1
-  stopifnot(assert_args)
-  # Assert arguments
   for (i in c(1:(node_count - 1))) {
     #loop [node_count - 1] times for shortest path takes [n - 1] edges
     temp_gph <- graph[which(graph[, 1] == init_node), ]
