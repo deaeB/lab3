@@ -5,16 +5,17 @@
 \alias{wiki_graph}
 \title{wiki_graph for 1.1.2 * dijkstra()}
 \format{
-An object of class \code{data.frame} with 18 rows and 3 columns.
+A data frame with 3 cols and 18 rows:
+\describe{
+ \item{v1, v2}{the edges of the graph}
+ \item{w}{the weight of the edge}
+}
 }
 \usage{
 wiki_graph
 }
 \description{
 a data.frame of a graph with three variables
-}
-\details{
-v1, v2: the edges of the graph; w: the weight of the edge
 }
 \references{
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
