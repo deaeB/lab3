@@ -26,5 +26,7 @@ function(graph, init_node){
     init_node <- max(which(list_spath == min(list_spath[-visited])))
     #update visited list and next node to go
   }
+  dim(list_spath) <- NULL
+  #seems testthat don't accept array but we are already here
   return(list_spath)
 }
