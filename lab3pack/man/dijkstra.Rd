@@ -7,9 +7,9 @@
 dijkstra(graph, init_node)
 }
 \arguments{
-\item{a}{a data.frame with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w)}
+\item{graph}{a data.frame with three variables (v1, v2 and w) that contains the edges of the graph (from v1 to v2) with the weight of the edge (w)}
 
-\item{b}{a numeric scalar that exist in the graph}
+\item{init_node}{a numeric scalar that exist in the graph}
 }
 \value{
 the shortest path to every other node from the starting node as a vector.
